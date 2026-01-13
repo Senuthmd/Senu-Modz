@@ -1,69 +1,118 @@
-<main class="flex-1 p-6 lg:p-10 overflow-y-auto bg-[#020617]">
-    <div class="max-w-6xl mx-auto text-center mb-16">
-        <h2 class="text-4xl font-extrabold text-white mb-4">Choose Your Power Plan</h2>
-        <p class="text-slate-400 text-lg">Scale your WhatsApp automation with our premium panels.</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senu Modz | Buy Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #020617; }
+        .glass { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="text-slate-200">
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="flex min-h-screen">
         
-        <div class="glass p-8 rounded-3xl flex flex-col border border-slate-800 hover:border-blue-500/50 transition-all group">
-            <h3 class="text-xl font-bold text-white mb-2">Starter</h3>
-            <p class="text-slate-400 text-sm mb-6">Perfect for personal use.</p>
-            <div class="mb-8">
-                <span class="text-4xl font-bold text-white">$9</span>
-                <span class="text-slate-500">/month</span>
+        <aside class="w-64 border-r border-slate-800 p-6 hidden lg:flex flex-col gap-8 fixed h-full bg-[#020617]">
+            <div class="flex items-center gap-3 px-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-white shadow-lg shadow-blue-600/20">S</div>
+                <h1 class="text-xl font-bold tracking-tight text-white uppercase">Senu Modz</h1>
             </div>
-            <ul class="space-y-4 mb-10 flex-1 text-sm text-slate-300">
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> 1 Active Bot Instance</li>
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> 5,000 Messages /mo</li>
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Basic Auto-Responder</li>
-                <li class="flex items-center gap-3 text-slate-500"><i data-lucide="x" class="w-5 h-5 text-slate-600"></i> Custom API Access</li>
-            </ul>
-            <button class="w-full py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold transition-all">Get Started</button>
-        </div>
 
-        <div class="glass p-8 rounded-3xl flex flex-col border-2 border-blue-600 relative transform scale-105 shadow-2xl shadow-blue-600/10">
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Most Popular</div>
-            <h3 class="text-xl font-bold text-white mb-2">Pro Panel</h3>
-            <p class="text-slate-400 text-sm mb-6">Best for small businesses.</p>
-            <div class="mb-8">
-                <span class="text-4xl font-bold text-white">$25</span>
-                <span class="text-slate-500">/month</span>
-            </div>
-            <ul class="space-y-4 mb-10 flex-1 text-sm text-slate-300">
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> 5 Active Bot Instances</li>
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Unlimited Messages</li>
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Advanced AI Plugins</li>
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> 24/7 Priority Support</li>
-            </ul>
-            <button class="w-full py-4 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition-all shadow-lg shadow-blue-600/30">Buy Now</button>
-        </div>
+            <nav class="flex flex-col gap-2 flex-1">
+                <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
+                    <i data-lucide="layout-dashboard" class="w-5 h-5"></i> 
+                    <span class="font-medium">Dashboard</span>
+                </a>
+                
+                <a href="buy.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-blue-600 text-white shadow-lg shadow-blue-900/40">
+                    <i data-lucide="credit-card" class="w-5 h-5"></i> 
+                    <span class="font-medium">Buy Panel</span>
+                </a>
 
-        <div class="glass p-8 rounded-3xl flex flex-col border border-slate-800 hover:border-blue-500/50 transition-all">
-            <h3 class="text-xl font-bold text-white mb-2">Enterprise</h3>
-            <p class="text-slate-400 text-sm mb-6">For power users & resellers.</p>
-            <div class="mb-8">
-                <span class="text-4xl font-bold text-white">$59</span>
-                <span class="text-slate-500">/month</span>
+                <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
+                    <i data-lucide="book-open" class="w-5 h-5"></i> 
+                    <span class="font-medium">Resources</span>
+                </a>
+            </nav>
+
+            <div class="mt-auto p-4 bg-slate-900/50 rounded-2xl border border-slate-800 flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-700"></div>
+                <div>
+                    <p class="text-sm font-bold text-white">Senuth</p>
+                    <p class="text-xs text-emerald-500">Online</p>
+                </div>
             </div>
-            <ul class="space-y-4 mb-10 flex-1 text-sm text-slate-300">
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Unlimited Instances</li>
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Dedicated Server</li>
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> White-label Branding</li>
-                <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> API & Webhook Access</li>
-            </ul>
-            <button class="w-full py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold transition-all">Contact Sales</button>
-        </div>
+        </aside>
+
+        <main class="flex-1 p-6 lg:p-10 lg:ml-64">
+            <div class="lg:hidden flex justify-between items-center mb-8">
+                <h1 class="text-xl font-bold text-white">SENU MODZ</h1>
+                <a href="index.html" class="p-2 bg-slate-800 rounded-lg"><i data-lucide="arrow-left" class="w-6 h-6"></i></a>
+            </div>
+
+            <div class="max-w-6xl mx-auto text-center mb-16 mt-4">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Choose Your Power Plan</h2>
+                <p class="text-slate-400 text-lg">Scale your WhatsApp automation with our premium panels.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="glass p-8 rounded-3xl flex flex-col border border-slate-800 hover:border-blue-500/50 transition-all group">
+                    <h3 class="text-xl font-bold text-white mb-2">Starter</h3>
+                    <p class="text-slate-400 text-sm mb-6">Perfect for personal use.</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold text-white">$9</span>
+                        <span class="text-slate-500">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-1 text-sm text-slate-300 text-left">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> 1 Active Bot Instance</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> 5,000 Messages /mo</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Basic Auto-Responder</li>
+                    </ul>
+                    <a href="https://wa.me/YOUR_NUMBER?text=I+want+Starter+Plan" class="w-full py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold transition-all block text-center">Get Started</a>
+                </div>
+
+                <div class="glass p-8 rounded-3xl flex flex-col border-2 border-blue-600 relative transform md:scale-105 shadow-2xl shadow-blue-600/10 bg-blue-900/10">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Popular</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Pro Panel</h3>
+                    <p class="text-slate-400 text-sm mb-6">Best for small businesses.</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold text-white">$25</span>
+                        <span class="text-slate-500">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-1 text-sm text-slate-300 text-left">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> 5 Active Bot Instances</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Unlimited Messages</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> 24/7 Priority Support</li>
+                    </ul>
+                    <a href="https://wa.me/YOUR_NUMBER?text=I+want+Pro+Panel" class="w-full py-4 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition-all shadow-lg shadow-blue-600/30 block text-center">Buy Now</a>
+                </div>
+
+                <div class="glass p-8 rounded-3xl flex flex-col border border-slate-800 hover:border-blue-500/50 transition-all">
+                    <h3 class="text-xl font-bold text-white mb-2">Enterprise</h3>
+                    <p class="text-slate-400 text-sm mb-6">For power users & resellers.</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-bold text-white">$59</span>
+                        <span class="text-slate-500">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-1 text-sm text-slate-300 text-left">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Unlimited Instances</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> Dedicated Server</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-blue-500"></i> White-label Branding</li>
+                    </ul>
+                    <a href="https://wa.me/YOUR_NUMBER?text=I+want+Enterprise" class="w-full py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold transition-all block text-center">Contact Sales</a>
+                </div>
+            </div>
+
+        </main>
     </div>
 
-    <div class="mt-20 glass p-8 rounded-3xl max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between border border-slate-800">
-        <div>
-            <h4 class="text-xl font-bold text-white">Need a custom plan?</h4>
-            <p class="text-slate-400 text-sm mt-1">We offer special discounts for long-term subscriptions.</p>
-        </div>
-        <a href="https://wa.me/YOUR_NUMBER" class="mt-6 md:mt-0 flex items-center gap-3 bg-[#25D366]/10 text-[#25D366] px-6 py-3 rounded-2xl font-bold hover:bg-[#25D366] hover:text-white transition-all border border-[#25D366]/20">
-            <i data-lucide="message-circle" class="w-5 h-5"></i>
-            Chat on WhatsApp
-        </a>
-    </div>
-</main>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
