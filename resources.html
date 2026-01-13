@@ -14,110 +14,43 @@
 </head>
 <body class="text-slate-200">
 
-    <div class="flex min-h-screen">
-        
-        <aside class="w-64 border-r border-slate-800 p-6 hidden lg:flex flex-col gap-8 fixed h-full bg-[#020617]">
-            <div class="flex items-center gap-3 px-2">
-                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-white shadow-lg shadow-blue-600/20">S</div>
-                <h1 class="text-xl font-bold tracking-tight text-white uppercase">Senu Modz</h1>
+<div class="flex min-h-screen">
+    <aside class="w-64 border-r border-slate-800 p-6 hidden lg:flex flex-col gap-8 fixed h-full bg-[#020617]">
+        <div class="flex items-center gap-3 px-2">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-white shadow-lg shadow-blue-600/20">S</div>
+            <h1 class="text-xl font-bold tracking-tight text-white uppercase">Senu Modz</h1>
+        </div>
+
+        <nav class="flex flex-col gap-2 flex-1">
+            <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
+                <i data-lucide="layout-dashboard" class="w-5 h-5"></i> 
+                <span class="font-medium">Dashboard</span>
+            </a>
+            <a href="buy.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
+                <i data-lucide="credit-card" class="w-5 h-5"></i> 
+                <span class="font-medium">Buy Panel</span>
+            </a>
+            <a href="resources.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-blue-600 text-white shadow-lg shadow-blue-900/40">
+                <i data-lucide="book-open" class="w-5 h-5"></i> 
+                <span class="font-medium">Resources</span>
+            </a>
+        </nav>
+
+        <!-- Updated User Profile -->
+        <a href="profile.html" class="mt-auto p-4 bg-slate-900/50 rounded-2xl border border-slate-800 flex items-center gap-3 hover:bg-slate-800 transition-all cursor-pointer">
+            <div class="w-8 h-8 rounded-full bg-slate-700"></div>
+            <div>
+                <p class="text-sm font-bold text-white">Senuth</p>
+                <p class="text-xs text-emerald-500">Online</p>
             </div>
+        </a>
+    </aside>
 
-            <nav class="flex flex-col gap-2 flex-1">
-                <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
-                    <i data-lucide="layout-dashboard" class="w-5 h-5"></i> <span class="font-medium">Dashboard</span>
-                </a>
-                <a href="buy.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
-                    <i data-lucide="credit-card" class="w-5 h-5"></i> <span class="font-medium">Buy Panel</span>
-                </a>
-                <a href="resources.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-blue-600 text-white shadow-lg shadow-blue-900/40">
-                    <i data-lucide="book-open" class="w-5 h-5"></i> <span class="font-medium">Resources</span>
-                </a>
-            </nav>
+    <main class="flex-1 p-6 lg:p-10 lg:ml-64">
+        <!-- Resources content here -->
+    </main>
+</div>
 
-            <div class="mt-auto p-4 bg-slate-900/50 rounded-2xl border border-slate-800 flex items-center gap-3">
-                <div class="w-8 h-8 rounded-full bg-slate-700"></div>
-                <div>
-                    <p class="text-sm font-bold text-white">Senuth</p>
-                    <p class="text-xs text-emerald-500">Online</p>
-                </div>
-            </div>
-        </aside>
-
-        <main class="flex-1 p-6 lg:p-10 lg:ml-64">
-            <div class="lg:hidden flex justify-between items-center mb-8">
-                <h1 class="text-xl font-bold text-white">SENU MODZ</h1>
-                <a href="index.html" class="p-2 bg-slate-800 rounded-lg"><i data-lucide="arrow-left" class="w-6 h-6"></i></a>
-            </div>
-
-            <header class="mb-10">
-                <h2 class="text-3xl font-bold text-white">Downloads & Resources</h2>
-                <p class="text-slate-400 mt-1">Get the latest scripts and tutorials for your bots.</p>
-            </header>
-
-            <div class="glass p-8 rounded-3xl border border-slate-800 mb-10 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl -mr-16 -mt-16"></div>
-                
-                <div class="bg-blue-600/20 p-6 rounded-2xl text-blue-500">
-                    <i data-lucide="file-code-2" class="w-12 h-12"></i>
-                </div>
-                <div class="flex-1 text-center md:text-left">
-                    <h3 class="text-2xl font-bold text-white">Senu Bot V4.0 (Latest)</h3>
-                    <p class="text-slate-400 mt-2 text-sm">The newest version with anti-ban features, auto-sticker maker, and group management tools. Updated yesterday.</p>
-                </div>
-                <div class="flex gap-4">
-                    <button class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold transition-all flex items-center gap-2">
-                        <i data-lucide="github" class="w-4 h-4"></i> GitHub
-                    </button>
-                    <button class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition-all shadow-lg shadow-blue-600/20 flex items-center gap-2">
-                        <i data-lucide="download" class="w-4 h-4"></i> Download Zip
-                    </button>
-                </div>
-            </div>
-
-            <h3 class="text-xl font-bold text-white mb-6">Video Tutorials</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-                <div class="glass p-4 rounded-2xl hover:bg-slate-800/50 transition-all cursor-pointer group">
-                    <div class="h-40 bg-slate-800 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all"></div>
-                        <i data-lucide="play-circle" class="w-12 h-12 text-white opacity-80 group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <h4 class="font-bold text-white">How to deploy on Vercel</h4>
-                    <p class="text-xs text-slate-400 mt-1">5 min watch • Beginner</p>
-                </div>
-
-                <div class="glass p-4 rounded-2xl hover:bg-slate-800/50 transition-all cursor-pointer group">
-                    <div class="h-40 bg-slate-800 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
-                         <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all"></div>
-                        <i data-lucide="play-circle" class="w-12 h-12 text-white opacity-80 group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <h4 class="font-bold text-white">Connecting WhatsApp Web</h4>
-                    <p class="text-xs text-slate-400 mt-1">2 min watch • Easy</p>
-                </div>
-
-                <div class="glass p-4 rounded-2xl hover:bg-slate-800/50 transition-all cursor-pointer group">
-                    <div class="h-40 bg-slate-800 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
-                         <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all"></div>
-                        <i data-lucide="play-circle" class="w-12 h-12 text-white opacity-80 group-hover:scale-110 transition-transform"></i>
-                    </div>
-                    <h4 class="font-bold text-white">Fixing "Scan QR" Errors</h4>
-                    <p class="text-xs text-slate-400 mt-1">10 min watch • Advanced</p>
-                </div>
-            </div>
-
-            <h3 class="text-xl font-bold text-white mb-6">Common Questions</h3>
-             <div class="space-y-4">
-                 <div class="glass p-5 rounded-xl border border-slate-800">
-                     <h4 class="font-bold text-slate-200 text-sm">How do I get an API Key?</h4>
-                     <p class="text-slate-400 text-sm mt-2">Go to your Profile settings and click "Generate New Key". It is free for the first 30 days.</p>
-                 </div>
-                 <div class="glass p-5 rounded-xl border border-slate-800">
-                     <h4 class="font-bold text-slate-200 text-sm">Is this bot anti-ban?</h4>
-                     <p class="text-slate-400 text-sm mt-2">Yes, version 4.0 includes random delay intervals to prevent WhatsApp from detecting automation.</p>
-                 </div>
-             </div>
-
-        </main>
-    </div>
-    <script>lucide.createIcons();</script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
