@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senu Modz | Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #020617; }
+        .glass { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="text-slate-200">
+
+    <div class="flex min-h-screen">
+        
+        <aside class="w-64 border-r border-slate-800 p-6 hidden lg:flex flex-col gap-8 fixed h-full bg-[#020617]">
+            <div class="flex items-center gap-3 px-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-white shadow-lg shadow-blue-600/20">S</div>
+                <h1 class="text-xl font-bold tracking-tight text-white uppercase">Senu Modz</h1>
+            </div>
+
+            <nav class="flex flex-col gap-2 flex-1">
+                <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
+                    <i data-lucide="layout-dashboard" class="w-5 h-5"></i> <span class="font-medium">Dashboard</span>
+                </a>
+                <a href="buy.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
+                    <i data-lucide="credit-card" class="w-5 h-5"></i> <span class="font-medium">Buy Panel</span>
+                </a>
+                <a href="resources.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition-all">
+                    <i data-lucide="book-open" class="w-5 h-5"></i> <span class="font-medium">Resources</span>
+                </a>
+            </nav>
+
+            <div class="mt-auto p-4 bg-blue-600/10 rounded-2xl border border-blue-600/30 flex items-center gap-3 cursor-pointer">
+                <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-xs font-bold">SM</div>
+                <div>
+                    <p class="text-sm font-bold text-white">Senuth</p>
+                    <p class="text-xs text-blue-400">View Profile</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-6 lg:p-10 lg:ml-64">
+             <div class="lg:hidden flex justify-between items-center mb-8">
+                <h1 class="text-xl font-bold text-white">SENU MODZ</h1>
+                <a href="index.html" class="p-2 bg-slate-800 rounded-lg"><i data-lucide="arrow-left" class="w-6 h-6"></i></a>
+            </div>
+
+            <header class="mb-10">
+                <h2 class="text-3xl font-bold text-white">Account Settings</h2>
+                <p class="text-slate-400 mt-1">Manage your profile and API keys.</p>
+            </header>
+
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+                
+                <div class="glass p-8 rounded-3xl border border-slate-800 flex flex-col items-center text-center">
+                    <div class="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1 mb-6">
+                        <div class="w-full h-full rounded-full bg-slate-900 flex items-center justify-center text-4xl font-bold text-white overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Senuth+Modz&background=0D8ABC&color=fff" alt="Avatar" class="w-full h-full object-cover rounded-full">
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Senuth Modz</h3>
+                    <p class="text-slate-400 mb-6">senumodz@gmail.com</p>
+                    
+                    <div class="w-full bg-slate-800/50 rounded-xl p-4 mb-6">
+                        <div class="flex justify-between items-center text-sm mb-2">
+                            <span class="text-slate-400">Current Plan</span>
+                            <span class="text-emerald-400 font-bold bg-emerald-400/10 px-2 py-1 rounded">PRO PLAN</span>
+                        </div>
+                        <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full w-3/4"></div>
+                        </div>
+                        <div class="flex justify-between items-center text-xs mt-2 text-slate-500">
+                            <span>12 days left</span>
+                            <span>Auto-renewal on</span>
+                        </div>
+                    </div>
+
+                    <a href="login.html" class="w-full py-3 rounded-xl border border-red-500/30 text-red-500 hover:bg-red-500 hover:text-white transition-all font-bold flex items-center justify-center gap-2">
+                        <i data-lucide="log-out" class="w-4 h-4"></i> Log Out
+                    </a>
+                </div>
+
+                <div class="xl:col-span-2 space-y-6">
+                    
+                    <div class="glass p-8 rounded-3xl border border-slate-800">
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                            <i data-lucide="key" class="w-5 h-5 text-blue-500"></i> Developer API Key
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-6">Use this key to connect your WhatsApp bot script to our dashboard.</p>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 flex items-center justify-between">
+                                <code class="text-slate-300 font-mono text-sm">sk_live_51Msz...92xS</code>
+                                <button class="text-slate-500 hover:text-white"><i data-lucide="copy" class="w-4 h-4"></i></button>
+                            </div>
+                            <button class="bg-slate-800 hover:bg-slate-700 text-white px-6 rounded-xl font-bold transition-all">Regenerate</button>
+                        </div>
+                    </div>
+
+                    <div class="glass p-8 rounded-3xl border border-slate-800">
+                        <h3 class="text-xl font-bold text-white mb-6">Edit Profile</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Display Name</label>
+                                <input type="text" value="Senuth Modz" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:border-blue-500 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Phone Number</label>
+                                <input type="text" value="+94 71 234 5678" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:border-blue-500 outline-none">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-2">GitHub URL</label>
+                                <input type="text" value="github.com/senumodz" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-white focus:border-blue-500 outline-none">
+                            </div>
+                        </div>
+                        <button class="mt-8 bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg shadow-blue-600/20">Save Changes</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
